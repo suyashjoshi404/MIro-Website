@@ -1,0 +1,147 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+.container {
+    max-width: 123rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav {
+    height: 10rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 5rem;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: opacity .3s;
+}
+
+.nav-link:hover {
+    opacity: 0.6;
+}
+
+.logo {
+    display: block;
+    width: 8rem;
+}
+
+.landing-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #3B4679, #2B3153);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.landing-page:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100vh;
+    background-image: url("./images/bg-pat.png");
+    background-size: cover;
+    opacity: .4;
+    z-index: -1;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.content-details {
+    max-width: 80%;
+}
+
+.title {
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #929FC5;
+    margin-bottom: 2.5rem;
+}
+
+.search input {
+    border: none;
+    border-radius: 5rem;
+    padding: 2rem;
+    outline: none;
+}
+
+.search-bar {
+    width: calc(100% - 0.5rem);
+}
+
+.search-btn {
+    width: 10rem;
+    background-image: linear-gradient(to right, #FF83D5, #FFCCB0);
+    color: white;
+    cursor: pointer;
+    margin-left: -10rem;
+}
+
+.search-btn:hover {
+    background-image: linear-gradient(to left, #FF83D5, #FFCCB0);
+}
+
+/* Section */
+section {
+    display: none;
+}
